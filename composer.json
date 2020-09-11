@@ -1,0 +1,28 @@
+{
+    "name": "it-yakutia/yii2-banner",
+    "description": "Banner for yii2",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"," banner"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ayaal Kpalin",
+            "email": "uraankhayayaal@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0",
+        "uraankhayayaal/yii2-sortable": "*",
+        "uraankhayayaal/yii2-materializecomponents": "*",
+        "uraankhayayaal/yii2-redactor": "*",
+        "2amigos/yii2-chartjs-widget" : "~2.0"
+    },
+    "extra": {
+        "bootstrap": "ityakutia\\banner\\Bootstrap"
+    },
+    "autoload": {
+        "psr-4": {
+            "ityakutia\\banner\\": "src"
+        }
+    }
+}
