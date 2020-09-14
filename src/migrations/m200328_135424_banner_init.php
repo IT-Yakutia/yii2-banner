@@ -3,9 +3,9 @@
 use yii\db\Migration;
 
 /**
- * Class m200911_124505_banner_init
+ * Class m200328_135424_banner_init
  */
-class m200911_124505_banner_init extends Migration
+class m200328_135424_banner_init extends Migration
 {
 
     public function safeUp()
@@ -21,7 +21,6 @@ class m200911_124505_banner_init extends Migration
             'title' => $this->string()->notNull(),
             'photo' => $this->string()->notNull(),
             'description' => $this->string()->notNull(),
-            'link' => $this->string(),
             'sort' => $this->integer(),
 
             'is_publish' => $this->boolean(),
