@@ -10,7 +10,7 @@ for ($i = 0; $i < $params['bannerCount']; $i++) {
     $data[] = [
         'title' => 'Banner: title - ' . $faker->words($nb = rand(3, 6), $asText = true),
         'description' => 'Banner description starts here - ' . $faker->words($nb = rand(10, 15), $asText = true),
-        'photo' => 'https://picsum.photos/id/' . $i . '/525/525/',
+        'photo' => 'https://picsum.photos/id/' . $i . '/1680/421/',
         'link' => $faker->url,
         'sort' => null,
         'is_publish' => round(rand(2, 10) / 10, 0),

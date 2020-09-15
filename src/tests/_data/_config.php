@@ -2,5 +2,5 @@
 
 return [
     // для загрузки тестовых данных в базу
-    'bannerCount' => 10
+    'bannerCount' => 4
 ];
