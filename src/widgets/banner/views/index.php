@@ -83,16 +83,20 @@ $assetBundle = BannerAsset::register($this);
     }
     #hero .banner-item-icon {
         max-width: 150px;
-        min-width: 100px;
-        
+        min-width: 60px;
     }
     #hero .banner-item-title {
         max-width: 800px;
-        font-size: 16px;
+        font-size: 11px;
     }
     #hero .banner-item-description {
         font-size: 13px;
         display: none;
+    }
+    @media screen and (min-width: 500px) {
+        #hero .banner-item-title {
+            font-size: 14px;
+        }
     }
     @media screen and (min-width: 567px) {
         #hero .banner-item-title {
@@ -102,10 +106,18 @@ $assetBundle = BannerAsset::register($this);
             font-size: 14px;
             display: block;
         }
+        #hero .banner-item-icon {
+            max-width: 200px;
+            min-width: 60px;
+        }
     }
     @media screen and (min-width: 768px) {
         #hero .banner-item-title {
             font-size: 22px;
+        }
+        #hero .banner-item-icon {
+            max-width: 160px;
+            min-width: 60px;
         }
     }
     @media screen and (min-width: 992px) {
