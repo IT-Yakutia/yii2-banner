@@ -1,5 +1,6 @@
 <?php
 
+use yii\bootstrap4\Html;
 use ityakutia\banner\assets\BannerAsset;
 
 $assetBundle = BannerAsset::register($this);
@@ -140,12 +141,15 @@ $assetBundle = BannerAsset::register($this);
                         </div>
                         <div class="d-flex align-items-center">
                             <div>
-                            <?php if(!empty($banner->title)) { ?>
-                                <h1 class="text-white ml-3 banner-item-title"><?= $banner->title ?></h1>
-                            <?php } ?>
-                            <?php if(!empty($banner->description)) { ?>
-                                <p class="text-white ml-3 banner-item-description"><?= $banner->description ?></p>
-                            <?php } ?>
+                                <?php if(!empty($banner->title)) { ?>
+                                    <h1 class="text-white ml-3 banner-item-title"><?= $banner->title ?></h1>
+                                <?php } ?>
+                                <?php if(!empty($banner->description)) { ?>
+                                    <p class="text-white ml-3 banner-item-description"><?= $banner->description ?></p>
+                                <?php } ?>
+                                <?php if(!empty($banner->link)) { ?>
+                                    <?= Html::a("Подробнее", $banner->link, ['class' => 'ml-3 btn text-white', 'target' => '_blank']) ?>
+                                <?php } ?>
                             </div>
                         </div>
                     </div>
