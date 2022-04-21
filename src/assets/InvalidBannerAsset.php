@@ -9,10 +9,11 @@ class InvalidBannerAsset extends AssetBundle
     public $sourcePath = '@ityakutia/banner/assets/src/';
     
     public $css = [
+        'css/invalid.css',
     ];
     public $js = [
     ];
     public $depends = [
-        'yii\web\YiiAsset',
+        'ityakutia\banner\assets\BannerAsset',
     ];
 }

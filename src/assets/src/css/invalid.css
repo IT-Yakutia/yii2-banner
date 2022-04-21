@@ -1,0 +1,34 @@
+
+#hero .owl-dots .owl-dot {
+    background: #fff;
+    border: 2px solid #000;
+    opacity: 1;
+}
+#hero .owl-dots .owl-dot.active{
+    background: #000;
+}
+#hero .owl-nav .owl-prev span,
+#hero .owl-nav .owl-next span {
+    color: #fff;
+    background: #000;
+    opacity: 1;
+}
+#hero .owl-nav .owl-prev:hover span,
+#hero .owl-nav .owl-next:hover span {
+    opacity: 1;
+    color: white;
+}
+#hero .banner-wrapper {
+    background: #0065b380;
+}
+#hero .banner-item-link {
+    background: #000;
+    color: #fff;
+    border-color: #fff;
+}
+#hero .banner-item-title,
+#hero .banner-item-description {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 7px;
+}

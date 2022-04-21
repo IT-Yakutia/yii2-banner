@@ -8,7 +8,7 @@ class BannerAsset extends AssetBundle
 {
     public $sourcePath = '@ityakutia/banner/assets/src/';
     
-    public $css = 
+    public $css = [
         'css/widget.css',
     ];
     public $js = [
