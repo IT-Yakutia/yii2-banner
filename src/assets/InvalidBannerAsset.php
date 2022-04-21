@@ -4,18 +4,15 @@ namespace ityakutia\banner\assets;
 
 use yii\web\AssetBundle;
 
-class BannerAsset extends AssetBundle
+class InvalidBannerAsset extends AssetBundle
 {
     public $sourcePath = '@ityakutia/banner/assets/src/';
     
-    public $css = 
-        'css/widget.css',
+    public $css = [
     ];
     public $js = [
-        'js/widget.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
-        'ityakutia\owl\OwlAsset',
     ];
 }
