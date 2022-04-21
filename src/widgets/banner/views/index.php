@@ -94,14 +94,22 @@ $assetBundle = BannerAsset::register($this);
         font-size: 13px;
         display: none;
     }
+    #hero .banner-item-link {
+        font-size: 11px;
+        padding: 0.1rem 0.2rem;
+    }
     @media screen and (min-width: 500px) {
         #hero .banner-item-title {
             font-size: 14px;
         }
+        #hero .banner-item-link {
+            font-size: 13px;
+            padding: 0.1rem 0.2rem;
+        }
     }
     @media screen and (min-width: 567px) {
         #hero .banner-item-title {
-            font-size: 17px;
+            font-size: 15px;
         }
         #hero .banner-item-description {
             font-size: 14px;
@@ -110,6 +118,10 @@ $assetBundle = BannerAsset::register($this);
         #hero .banner-item-icon {
             max-width: 200px;
             min-width: 60px;
+        }
+        #hero .banner-item-link {
+            font-size: 13px;
+            padding: 0.1rem 0.2rem;
         }
     }
     @media screen and (min-width: 768px) {
@@ -124,6 +136,10 @@ $assetBundle = BannerAsset::register($this);
     @media screen and (min-width: 992px) {
         #hero .banner-item-title {
             font-size: 22px;
+        }
+        #hero .banner-item-link {
+            font-size: 14px;
+            padding: 0.375rem 0.75rem;
         }
     }
 </style>
@@ -148,7 +164,7 @@ $assetBundle = BannerAsset::register($this);
                                     <p class="text-white ml-3 banner-item-description"><?= $banner->description ?></p>
                                 <?php } ?>
                                 <?php if(!empty($banner->link)) { ?>
-                                    <?= Html::a("Подробнее", $banner->link, ['class' => 'ml-3 btn text-white', 'target' => '_blank']) ?>
+                                    <?= Html::a("Подробнее", $banner->link, ['class' => 'banner-item-link ml-3 btn text-white', 'target' => '_blank']) ?>
                                 <?php } ?>
                             </div>
                         </div>
@@ -174,7 +190,14 @@ $script = <<< JS
         items:1,
         nav:true,
         loop:true,
-        dots:true,
+        responsive:{
+            0:{
+                dots:false,
+            },
+            700:{
+                dots:true,
+            }
+        }
     });
   });
 JS;
