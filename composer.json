@@ -17,12 +17,20 @@
         "uraankhayayaal/yii2-redactor": "*",
         "2amigos/yii2-chartjs-widget" : "~2.0"
     },
-    "extra": {
-        "bootstrap": "ityakutia\\banner\\Bootstrap"
-    },
     "autoload": {
         "psr-4": {
             "ityakutia\\banner\\": "src"
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
         }
     }
 }
