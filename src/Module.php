@@ -9,12 +9,4 @@ class Module extends \yii\base\Module
      */
     public $controllerNamespace = 'ityakutia\banner\controllers';
     public $defaultRoute = 'banner';
-
-    /**
-     * @inheritdoc
-     */
-    public function init()
-    {
-        parent::init();
-    }
 }
